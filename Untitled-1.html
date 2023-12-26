@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Life Moments</title>
+    <style>
+        /* Your existing styles here */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Life Moments</h1>
+    </header>
+
+    <main>
+        <div class="media-item">
+            <img src="D:\恋爱网站\img\photo1.jpg" alt="Life Moment 1">
+            <p>Description for Life Moment 1</p>
+        </div>
+
+        <div class="media-item">
+            <video controls>
+                <source src="D:\恋爱网站\vid\video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Description for Life Moment 2</p>
+        </div>
+
+        <!-- Add more media items as needed -->
+
+    </main>
+    <audio id="bgMusic" controls loop autoplay>
+        <source src="D:\恋爱网站\bgm\cc1.flac" type="audio/flac">
+        Your browser does not support the audio element.
+        <p>Description for Life Moment 3</p>
+    </audio>
+
+    <script>
+        // Remove the click event listener
+        // Start playing background music when the page is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            var bgMusic = document.getElementById('bgMusic');
+            document.body.addEventListener('click',function() {
+            if (bgMusic.paused) {
+                bgMusic.play();
+            }
+        });
+    });
+    </script>
+</body>
+</html>
